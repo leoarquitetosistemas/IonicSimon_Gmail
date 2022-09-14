@@ -1,0 +1,36 @@
+<ion-content class="">
+
+  <ion-header class="ion-no-border">
+	<ion-toolbar class="ion-text-center">
+		<ion-buttons slot="start">
+			<ion-button (click)="close()" fill="clear" color="dark">
+				<ion-icon name="close" slot="icon-only"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+		<img src="./assets/logo-google-690x283.png" [style.width]="'70px'" />
+	</ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding manage-account">
+	<ion-item lines="none">
+		<ion-avatar slot="start">
+			<img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?r=pg" />
+		</ion-avatar>
+		<ion-label color="dark">
+			Simon Grimm
+			<p>saimon@devdactic.com</p>
+		</ion-label>
+	</ion-item>
+	<ion-button expand="full" shape="round" fill="outline" color="dark" class="">
+		Manage your Account
+	</ion-button>
+
+  <ion-item class="ion-margin-top" lines="none">
+    <ion-icon name="person-add-outline" slot="start"></ion-icon>
+    Add another account
+  </ion-item>
+  <ion-item class="ion-margin-bottom" lines="none">
+    <ion-icon name="person-outline" slot="start"></ion-icon>
+    Manage accounts on this device
+  </ion-item>
+</ion-content>
